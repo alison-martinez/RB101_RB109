@@ -1,0 +1,23 @@
+
+[1mFrom:[0m /home/alison/RB101_RB109/lesson_6/tic_tac_toe_bonus_features.rb:30 Object#joinor:
+
+    [1;34m25[0m: [32mdef[0m [1;34mjoinor[0m(array, main_join = [31m[1;31m'[0m[31m, [1;31m'[0m[31m[0m, final_join = [31m[1;31m'[0m[31mor[1;31m'[0m[31m[0m)
+    [1;34m26[0m:   new_string = array.join(main_join)
+    [1;34m27[0m:   new_string.gsub!(main_join, [31m[1;31m"[0m[31m #{final_join}[0m[31m[1;31m"[0m[31m[0m) [32mif[0m array.size == [1;34m2[0m
+    [1;34m28[0m:   last_element_length = array.last.size
+    [1;34m29[0m:   new_string.insert(-last_element_length, [31m[1;31m"[0m[31m #{final_join}[0m[31m [1;31m"[0m[31m[0m)
+ => [1;34m30[0m:   binding.pry
+    [1;34m31[0m: 
+    [1;34m32[0m:   
+    [1;34m33[0m: 
+    [1;34m34[0m: 
+    [1;34m35[0m:   [1;34m#array.each_with_index do |element, index|[0m
+    [1;34m36[0m:   [1;34m#  new_string << element.to_s if index.zero?[0m
+    [1;34m37[0m:   [1;34m#  return new_string << " #{final_join} " + element if index == 1 && array.size == 2[0m
+    [1;34m38[0m: [1;34m#[0m
+    [1;34m39[0m:   [1;34m#  new_string << main_join + element.to_s if index.positive? && index < array.size - 1[0m
+    [1;34m40[0m:   [1;34m#  new_string << main_join + final_join + ' ' + element.to_s if index == array.size - 1[0m
+    [1;34m41[0m:   [1;34m#end[0m
+    [1;34m42[0m:   new_string
+    [1;34m43[0m: [32mend[0m
+
